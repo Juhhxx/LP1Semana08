@@ -1,6 +1,6 @@
 using System;
 
-namespace PlayerManager1
+namespace PlayerManager2
 {
     public class Player
     {
