@@ -4,7 +4,7 @@ namespace AnimalKingdom
 {
     public class Bat : Animal, IMammal, ICanFly
     {
-        int NumberOfNipples { get; } = 2;
-        int NumberOfWings { get; } = 4;
+        public int NumberOfNipples { get; } = 2;
+        public int NumberOfWings { get; } = 4;
     }
 }

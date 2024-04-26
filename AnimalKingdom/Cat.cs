@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Polimorfismo
+namespace AnimalKingdom
 {
     public class Cat : Animal, IMammal
     {
-        int NumberOfNipples { get; } = 6;
+        public int NumberOfNipples { get; } = 6;
         public override string Sound()
         {
             return base.Sound() + "Miau";

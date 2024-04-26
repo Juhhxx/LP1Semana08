@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Polimorfismo
+namespace AnimalKingdom
 {
     public class Animal
     {

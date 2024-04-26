@@ -4,6 +4,6 @@ namespace AnimalKingdom
 {
     public class Bee : Animal, ICanFly
     {
-        int NumberOfWings { get; } = 4;
+        public int NumberOfWings { get; } = 4;
     }
 }
