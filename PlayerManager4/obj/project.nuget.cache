@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "uaF6f6wEksZlphctOjJ8lEpc7fdQYTMJX65rtER+cB5IuxNf1xOyHw7iFPzUEl1CyAH8XEmKNRNkJktKq38PEg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\count\\OneDrive - Ensino Lusófona\\Lusofona\\lp1\\LP1Semana08\\PlayerManager4\\PlayerManager4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\count\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\count\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\count\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\count\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}
