@@ -31,7 +31,12 @@ namespace PlayerManager1
         }
         private void ListPlayersWithScoreGreaterThan()
         {
+            Console.Write("Insert the minimum score:\n> ");
+            int _minScore = int.Parse(Console.ReadLine());
 
+            IEnumerable<Player> _newList = GetPlayersWithScoreGreaterThan(_minScore);
+
+            ListPlayers(_newList);
         }
         private IEnumerable<Player> GetPlayersWithScoreGreaterThan(int _minScore)
         {
