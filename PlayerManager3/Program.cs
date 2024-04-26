@@ -24,6 +24,7 @@ namespace PlayerManager3
 
             do
             {
+                _playerList.Sort();
                 ShowMenu();
                 _userOption = Console.ReadLine();
 
