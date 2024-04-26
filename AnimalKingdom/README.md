@@ -1,0 +1,7 @@
+```mermaid
+---
+title: AnimalKingdom
+---
+    classDiagram
+    
+```
