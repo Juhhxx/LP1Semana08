@@ -2,7 +2,7 @@ using System;
 
 namespace AnimalKingdom
 {
-    public class Bee
+    public class Bee : Animal
     {
         
     }
