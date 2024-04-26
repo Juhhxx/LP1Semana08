@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace PlayerManager1
 {
@@ -9,6 +8,8 @@ namespace PlayerManager1
         private List<Player> _playerList;
         static void Main(string[] args)
         {
+            Program prog = new Program();
+            prog.Start();
         }
         private Program()
         {
@@ -23,6 +24,7 @@ namespace PlayerManager1
 
             do
             {
+                ShowMenu();
                 _userOption = Console.ReadLine();
 
                 switch(_userOption)
@@ -47,7 +49,7 @@ namespace PlayerManager1
         }
         private void ShowMenu()
         {
-            Console.WriteLine("======= PROGRAM MENU =======");
+            Console.WriteLine("\n======= PROGRAM MENU =======\n");
             Console.WriteLine("1. Insert new Player;\n");
             Console.WriteLine("2. List all Players;\n");
             Console.WriteLine("3. List all Players with a specified score;\n");
@@ -57,7 +59,7 @@ namespace PlayerManager1
         }
         private void InsertPlayer()
         {
-            Console.Write("Insert player name:\n> ");
+            Console.Write("\nInsert player name:\n> ");
             string _name = Console.ReadLine();
 
             Console.Write("\nInsert player score:\n> ");
@@ -68,16 +70,18 @@ namespace PlayerManager1
         }
         private static void ListPlayers(IEnumerable<Player> _playerToList)
         {
-            Console.WriteLine("\nList of all players:");
+            Console.WriteLine("\nList of players:\n");
 
             foreach (Player p in _playerToList)
             {
-                Console.WriteLine($"Name={p.Name} Score={p.Score}");
+                Console.WriteLine($"{p.Name} Score={p.Score}");
             }
+
+            Console.WriteLine("");
         }
         private void ListPlayersWithScoreGreaterThan()
         {
-            Console.Write("Insert the minimum score:\n> ");
+            Console.Write("\nInsert the minimum score:\n> ");
             int _minScore = int.Parse(Console.ReadLine());
 
             IEnumerable<Player> _newList = GetPlayersWithScoreGreaterThan(_minScore);
