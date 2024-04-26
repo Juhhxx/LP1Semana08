@@ -9,6 +9,13 @@ namespace PlayerManager1
         static void Main(string[] args)
         {
         }
+        private Program()
+        {
+            _playerList = new List<Player>() {
+                new Player("Best player ever", 100),
+                new Player("An even better player", 500)
+            };
+        }
         private void InsertPlayer()
         {
             Console.Write("Insert player name:\n> ");
