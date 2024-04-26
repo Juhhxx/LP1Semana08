@@ -16,9 +16,18 @@ namespace PlayerManager1
 
             Console.Write("\nInsert player score:\n> ");
             int _score = int.Parse(Console.ReadLine());
-            
+
             Player newPlayer = new Player(_name,_score);
             _playerList.Add(newPlayer);
+        }
+        private static void ListPlayers(IEnumerable<Player> _playerToList)
+        {
+            Console.WriteLine("\nList of all players:");
+
+            foreach (Player p in _playerToList)
+            {
+                Console.WriteLine($"Name={p.Name} Score={p.Score}");
+            }
         }
     }
 }
