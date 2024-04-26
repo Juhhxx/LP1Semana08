@@ -69,7 +69,7 @@ namespace PlayerManager4
             Player newPlayer = new Player(_name,_score);
             _playerList.Add(newPlayer);
         }
-        private void ListPlayers(List<Player> _playerToList)
+        private static void ListPlayers(List<Player> _playerToList)
         {
             ShowListOrderMenu();
             string _userOption = Console.ReadLine();
