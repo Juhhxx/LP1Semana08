@@ -69,8 +69,28 @@ namespace PlayerManager4
             Player newPlayer = new Player(_name,_score);
             _playerList.Add(newPlayer);
         }
-        private static void ListPlayers(IEnumerable<Player> _playerToList)
+        private void ListPlayers(List<Player> _playerToList)
         {
+            ShowListOrderMenu();
+            string _userOption = Console.ReadLine();
+
+            switch(_userOption)
+            {
+                case "1":
+                    _playerToList.Sort();
+                    break;
+                case "2":
+                    _playerToList.Sort(new CompareByName(true));
+                    break;
+                case "3":
+                    _playerToList.Sort(new CompareByName(false));
+                    break;
+                default:
+                    Console.Error.WriteLine("\n>>> Unknown option! <<<\n");
+                    ListPlayers(_playerToList);
+                    break;
+            }
+
             Console.WriteLine("\nList of players:\n");
 
             foreach (Player p in _playerToList)
@@ -85,9 +105,18 @@ namespace PlayerManager4
             Console.Write("\nInsert the minimum score:\n> ");
             int _minScore = int.Parse(Console.ReadLine());
 
-            IEnumerable<Player> _newList = GetPlayersWithScoreGreaterThan(_minScore);
+            List<Player> _newList = new List<Player>(GetPlayersWithScoreGreaterThan(_minScore));
 
             ListPlayers(_newList);
+        }
+        private static void ShowListOrderMenu()
+        {
+            Console.WriteLine("\n======= LIST ORDER MENU =======\n");
+            Console.WriteLine("1. Score, descending order;\n");
+            Console.WriteLine("2. Names, ascending order;\n");
+            Console.WriteLine("3. Names, ascending order\n");
+            Console.WriteLine("=================================");
+            Console.Write("\nInsert option:\n> ");
         }
         private IEnumerable<Player> GetPlayersWithScoreGreaterThan(int _minScore)
         {
