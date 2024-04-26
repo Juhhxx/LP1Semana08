@@ -29,5 +29,23 @@ namespace PlayerManager1
                 Console.WriteLine($"Name={p.Name} Score={p.Score}");
             }
         }
+        private void ListPlayersWithScoreGreaterThan()
+        {
+
+        }
+        private IEnumerable<Player> GetPlayersWithScoreGreaterThan(int _minScore)
+        {
+            List<Player> _greaterThan = new List<Player>();
+
+            foreach (Player p in _playerList)
+            {
+                if (p.Score > _minScore)
+                {
+                    _greaterThan.Add(p);
+                }
+            }
+
+            return _greaterThan;
+        }
     }
 }
