@@ -13,7 +13,8 @@ namespace PlayerManager4
         }
         public int Compare(Player x, Player y)
         {
-
+            int result = string.Compare(x.Name,y.Name);
+            return _ascendOrder ? result : -result;
         }
     }
 }
