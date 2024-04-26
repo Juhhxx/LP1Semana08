@@ -16,6 +16,34 @@ namespace PlayerManager1
                 new Player("An even better player", 500)
             };
         }
+        private void Start()
+        {
+            string _userOption;
+
+            do
+            {
+                _userOption = Console.ReadLine();
+
+                switch(_userOption)
+                {
+                    case "1":
+                        InsertPlayer();
+                        break;
+                    case "2":
+                        ListPlayers(_playerList);
+                        break;
+                    case "3":
+                        ListPlayersWithScoreGreaterThan();
+                        break;
+                    case "4":
+                        Console.WriteLine("Bye!");
+                        break;
+                    default:
+                        Console.Error.WriteLine("\n>>> Unknown option! <<<\n");
+                        break;
+                }
+            } while (_userOption != "4");
+        }
         private void InsertPlayer()
         {
             Console.Write("Insert player name:\n> ");
