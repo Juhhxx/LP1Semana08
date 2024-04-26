@@ -6,5 +6,9 @@ namespace AnimalKingdom
     {
         public int NumberOfNipples { get; } = 2;
         public int NumberOfWings { get; } = 4;
+        public override string Sound()
+        {
+            return base.Sound() + "<Click>";
+        }
     }
 }
