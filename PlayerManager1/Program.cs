@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace PlayerManager1
 {
@@ -43,6 +44,16 @@ namespace PlayerManager1
                         break;
                 }
             } while (_userOption != "4");
+        }
+        private void ShowMenu()
+        {
+            Console.WriteLine("======= PROGRAM MENU =======");
+            Console.WriteLine("1. Insert new Player;\n");
+            Console.WriteLine("2. List all Players;\n");
+            Console.WriteLine("3. List all Players with a specified score;\n");
+            Console.WriteLine("4. Quit Program.\n");
+            Console.WriteLine("=============================");
+            Console.Write("\nInsert option:\n> ");
         }
         private void InsertPlayer()
         {
