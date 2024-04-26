@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LootSort")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+915adf660c56e5d28f2f8f7dac531d2b4486fe3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c03799da0f04ae342d66c81e79b448f66b4a6215")]
 [assembly: System.Reflection.AssemblyProductAttribute("LootSort")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LootSort")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
